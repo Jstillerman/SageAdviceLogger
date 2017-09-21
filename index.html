@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SAL</title>
+  </head>
+  <body>
+    <h1>Sage Advice Logger</h1>
+    <button type="button" name="button" onclick="collect()">Submit</button>
+    <br>
+  </body>
+
+  <script>
+    var settings = require('./settings')
+
+    var submit = require('./renderer.js')
+    console.log(settings);
+
+    var els = []
+
+    settings.people.forEach(person => {
+      document.write(person.name+'<br>')
+       var el = document.createElement("textarea")
+       document.body.appendChild(el)
+       document.body.appendChild(document.createElement('br'))
+       els.push({element: el, person: person})
+    })
+
+    function collect(){
+      var data = []
+      els.forEach(el => {
+        if(el.element.value != ""){
+          data.push({
+            name: el.person.name,
+            file: el.person.file,
+            entry: el.element.value
+          })
+        }
+        el.element.value = ""
+      })
+      submit(data)
+    }
+  </script>
+</html>

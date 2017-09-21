@@ -1,0 +1,36 @@
+{
+  "people": [
+    {
+      "name": "Julia G",
+      "file": "/Users/kathy/SAL/JuliaG.txt"
+    },
+    {
+      "name": "Robbert Murray",
+      "file": "/Users/kathy/SAL/RobbertM.txt"
+    },
+    {
+      "name": "Elizabeth K",
+      "file": "/Users/kathy/SAL/ElizabethK.txt"
+    },
+    {
+      "name": "Joe Kowan",
+      "file": "/Users/kathy/SAL/JoeK.txt"
+    },
+    {
+      "name": "Chuck Sullivan",
+      "file": "/Users/kathy/SAL/ChuckS"
+    },
+    {
+      "name": "(Potential) O'Connor",
+      "file": "/Users/kathy/SAL/OConnor.txt"
+    },
+    {
+      "name": "(Potential) Mary Pat",
+      "file": "/Users/kathy/SAL/MaryP.txt"
+    },
+    {
+      "name": "(Potential) Kathy Mazolla",
+      "file": "/Users/kathy/SAL/KathyM.txt"
+    }
+  ]
+}
