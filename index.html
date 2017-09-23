@@ -8,13 +8,27 @@
     <h1>Sage Advice Logger</h1>
     <button type="button" name="button" onclick="collect()">Submit</button>
     <br>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="fileName" placeholder="File Name">
+    <button type="button" name="button" onclick="addClient()">Add Client</button>
+    <br>
   </body>
 
   <script>
-    var settings = require('./settings')
+    var basePath = "/Users/kathy/SAL/"
+    var storage = require('node-persist')
+
+
+    storage.initSync()
+
+    if(storage.getItemSync('settings')){
+      var settings = JSON.parse(storage.getItemSync('settings'))
+    }
+    else {
+      var settings = {people: []}
+    }
 
     var submit = require('./renderer.js')
-    console.log(settings);
 
     var els = []
 
@@ -39,6 +53,26 @@
         el.element.value = ""
       })
       submit(data)
+    }
+
+    function addClient() {
+      console.log('hi');
+      var name = document.getElementById('name').value
+      var fileName = document.getElementById('fileName').value
+      fileName = basePath + fileName
+      if(!fileName.endsWith(".txt")) fileName += ".txt"
+
+      settings.people.push({
+        name: name,
+        file: fileName
+      })
+
+        console.log(storage.getItemSync('settings'))
+        storage.setItemSync('settings', JSON.stringify(settings))
+        console.log(storage.getItemSync('settings'))
+
+        location.reload()
+
     }
   </script>
 </html>
