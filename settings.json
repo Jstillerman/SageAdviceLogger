@@ -2,35 +2,63 @@
   "people": [
     {
       "name": "Julia G",
-      "file": "/Users/kathy/SAL/JuliaG.txt"
+      "file": "JuliaG.txt"
     },
     {
       "name": "Robbert Murray",
-      "file": "/Users/kathy/SAL/RobbertM.txt"
+      "file": "RobbertM.txt"
     },
     {
       "name": "Elizabeth K",
-      "file": "/Users/kathy/SAL/ElizabethK.txt"
+      "file": "ElizabethK.txt"
     },
     {
       "name": "Joe Kowan",
-      "file": "/Users/kathy/SAL/JoeK.txt"
+      "file": "JoeK.txt"
     },
     {
       "name": "Chuck Sullivan",
-      "file": "/Users/kathy/SAL/ChuckS"
+      "file": "ChuckS"
     },
     {
       "name": "(Potential) O'Connor",
-      "file": "/Users/kathy/SAL/OConnor.txt"
+      "file": "OConnor.txt"
     },
     {
       "name": "(Potential) Mary Pat",
-      "file": "/Users/kathy/SAL/MaryP.txt"
+      "file": "MaryP.txt"
     },
     {
       "name": "(Potential) Kathy Mazolla",
-      "file": "/Users/kathy/SAL/KathyM.txt"
+      "file": "KathyM.txt"
+    },
+    {
+      "name": "Franco",
+      "file": "Franco.txt"
+    },
+    {
+      "name": "Suzanne S",
+      "file": "SuzanneS.txt"
+    },
+    {
+      "name": "Herb D",
+      "file": "Herb.txt"
+    },
+    {
+      "name": "Elsie P",
+      "file": "Elsie P.txt"
+    },
+    {
+      "name": "Don M",
+      "file": "DonM.txt"
+    },
+    {
+      "name": "Person 1",
+      "file": "Person1.txt"
+    },
+    {
+      "name": "Person 2",
+      "file": "Person2.txt"
     }
   ]
 }
